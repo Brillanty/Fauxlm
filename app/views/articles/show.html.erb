@@ -4,8 +4,8 @@
 <%= render @article %>
 
 <div>
-  <%= link_to "Editer cet Article", edit_article_path(@article) %> |
-  <%= link_to "Retour Articles", articles_path %>
+  <%= link_to "Editer cet article", edit_article_path(@article) %> |
+  <%= link_to "Retour articles", articles_path %>
 
-  <%= button_to "Supprimer cet Article", @article, method: :delete %>
+  <%= button_to "Supprimer cet article", @article, method: :delete %>
 </div>
