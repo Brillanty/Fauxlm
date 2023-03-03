@@ -8,15 +8,22 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <nav class="navbar"; style="background-color: #C9C2C5">
+
+
+  </head>
+
+  <body>
+
+      <nav class="navbar"; style="background-color: #C9C2C5">
     <div class="container justify-content-center">
       <span class="navbar-brand m-3 h1"; style="font-size: 40px">Fallms</span>
     </div>
     </nav>
 
-  </head>
-
-  <body>
-    <%= yield %>
+    <div class="container">
+    <div class="p-5">
+      <%= yield %>
+    </div>
+    </div>
   </body>
 </html>
