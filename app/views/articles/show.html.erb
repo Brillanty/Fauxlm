@@ -6,8 +6,8 @@
 
 <div class="d-flex justify-content-center">
 <div>
-  <%= link_to "Editer cet article", edit_article_path(@article) %> |
-  <%= link_to "Retour articles", articles_path %>
+  <button type="button" class="btn l-1" style="background-color: #C9C2C5"><%= link_to "Editer cet article", edit_article_path(@article) %></button>
+  <button type="button" class="btn l-1" style="background-color: #C9C2C5"><%= link_to "Retour articles", articles_path %></button>
 
   <%= button_to "Supprimer cet article", @article, method: :delete %>
 </div>
