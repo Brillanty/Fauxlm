@@ -2,10 +2,12 @@
 
 
     <div id="articles">
-<div class="row"; class="justify-content-center">
+<div class="row">
+<div class="d-flex justify-content-evenly">
   <% @articles.each do |article| %>
     <%= render article %>
       <% end %>
+</div>
 </div>
     </div>
 
