@@ -1,11 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-
+<div class="d-flex justify-content-center">
 <%= render @article %>
+</div>
 
+<div class="d-flex justify-content-center">
 <div>
   <%= link_to "Editer cet article", edit_article_path(@article) %> |
   <%= link_to "Retour articles", articles_path %>
 
   <%= button_to "Supprimer cet article", @article, method: :delete %>
+</div>
 </div>
